@@ -77,10 +77,10 @@ a.articleBT.btReadLater{
 
 
 /* 
-	DIV 
+	The main display div for all the articles.
 */
 #mainDisplayDiv{
-	width:300px;
+	width:100%;
 	min-height: 100px;
 	background-color:#3D404F;
 	padding-top: 15px;
