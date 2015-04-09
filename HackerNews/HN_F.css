@@ -1,0 +1,88 @@
+
+/* Tag */
+body {
+	background-color: #000;
+	font-family: arial;
+}
+
+div.article{ /* article div*/
+	width:90%;
+	padding:0px;
+	margin-bottom: 5%;
+	background-color: #899;
+	color:#eee;
+}
+div.articleContent{
+	width:100%;
+}
+div.articleTT{
+	height:80px;
+	background-color: #455;
+}
+div.articleFN{
+	height:30px;
+	background-color: #566;
+}
+div.articlePV{
+	height:250px;
+	background-color: #abb;
+	overflow-y: hidden;
+}
+
+/* 
+	buttons for favourite, read later and remove from display
+*/
+div.articleBT{
+	width:33.33333333%;
+	padding-top: 7px;
+	padding-bottom: 5px;
+
+	float:left;
+	background-color: #777
+}
+div.articleBT1{
+
+}
+div.articleBT2{
+	background-color: #666
+}
+div.articleBT3{
+
+}
+
+
+/* 
+	links for favourite, read later and remove from display
+*/
+a.btLink{
+	width:100%;
+	font-size: 16px;
+	font-weight: 700;
+	color:#eee;
+	text-decoration:none;
+}
+a.articleBT.btRemove{
+
+}
+a.articleBT.btFavourite{
+
+}
+a.articleBT.btReadLater{
+
+}
+
+
+
+
+
+
+/* 
+	DIV 
+*/
+#mainDisplayDiv{
+	width:300px;
+	min-height: 100px;
+	background-color:#3D404F;
+	padding-top: 15px;
+	padding-bottom: 1px;
+}
