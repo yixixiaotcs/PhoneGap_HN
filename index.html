@@ -6,16 +6,16 @@
 		<title>Hacker News</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<!-- JS for pressing button, swiping, and other user actions -->
-		<script src="./js/Action.js"></script>
-		<!-- JS for displaying articles, opening browsers and other visual related scripts -->
-		<script src="./js/Display.js"></script>
+		<script type="text/javascript" src="./js/Action.js"></script>
+		<!-- JS for displaying storys, opening browsers and other visual related scripts -->
+		<script type="text/javascript" src="./js/Display.js"></script>
 		<!-- JS for reading and writing json file -->
-		<script src="./js/FileRW.js"></script>
+		<script type="text/javascript" src="./js/FileRW.js"></script>
 		<link rel="stylesheet" type="text/css" href="./css/HN_F.css">
 	</head>
 
 
-	<body>
+	<body onload="onload();">
 		<!-- buttons for testing purposes. Shall be replaced with phone actions later in dev. -->
 		<div>
 			<input type="text" id="searchStories" />
@@ -31,53 +31,39 @@
 		</div>
 
 		<center>
-			<!-- main div for displaying articles -->
+			<!-- main div for displaying storys -->
 			<div id="mainDisplayDiv">
 
 
-				<!-- sample div for a single article -->
-				<!-- ---------------------------------------------------------------------------- -->
-				<div class="article">
-					<div class="articleContent articleTT">
-						-- TITLE PLACEHOLDER --
+				<!-- sample div for a single story -->
+				<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+					<!--
+				<div class="story">
+					<div class="storyContent storyTT" id="story1">
+					TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE TITLE
 					</div>
 					
-					<div class="articleContent articleFN">
-						<div class="articleBT articleBT1">
-							<a class="btLink btRemove" href="https://www.google.com">
+					<div class="storyContent storyFN">
+						<button class="storyBT storyBT1">
 								REMOVE
-							</a>
-						</div>
-						<div class="articleBT articleBT2">
-							<a class="btLink btFavourite" href="https://www.google.com">
+						</button>
+						<button class="storyBT storyBT2">
 								FAV
-							</a>
-						</div>
-						<div class="articleBT articleBT3">
-							<a class="btLink btReadlater" href="https://www.google.com">
+						</button>
+						<button class="storyBT storyBT3">
 								LATER
-							</a>
-						</div>
+						</button>
 
 					</div>
-
-					<div class="articleContent articlePV" data-id="00001" isShowing="false">
+					
+					
+					<div class="storyContent storyPV" data-id="00001" isShowing="false">
 						-- PREVIEW PLACEHOLDER --
 					</div>
 				</div>
-				<!-- ---------------------------------------------------------------------------- -->
+					-->
+				<!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
-				<div class="article">
-					<div class="articleTT"></div>
-					<div class="articleFN"></div>
-					<div class="articlePV"></div>
-				</div>
-
-				<div class="article">
-					<div class="articleTT"></div>
-					<div class="articleFN"></div>
-					<div class="articlePV"></div>
-				</div>
 			</div>
 		</center>
 	</body>

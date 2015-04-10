@@ -1,88 +1,120 @@
 
-/* Tag */
+/* ===================================================================================
+	TAG //////////////////////////////////////////////////////////////////////////////
+	TAG //////////////////////////////////////////////////////////////////////////////
+	TAG //////////////////////////////////////////////////////////////////////////////
+=================================================================================== */ 
+header {
+	
+}
+
 body {
 	background-color: #000;
+	
 	font-family: arial;
 }
 
-div.article{ /* article div*/
-	width:90%;
+
+
+
+/* ===================================================================================
+	CLASS ////////////////////////////////////////////////////////////////////////////
+	CLASS ////////////////////////////////////////////////////////////////////////////
+	CLASS ////////////////////////////////////////////////////////////////////////////
+=================================================================================== */ 
+
+
+
+/* ==========================================================
+	ARTICLE div for each separate stories
+========================================================== */
+div.story{ /* story div for each story */
 	padding:0px;
+	margin-left:3%;
+	margin-right:3%;
 	margin-bottom: 5%;
+	
 	background-color: #899;
+	
+	text-align: left;
 	color:#eee;
 }
-div.articleContent{
+div.storyContent{ /* main class for title, buttons and previews */
 	width:100%;
+	
+	word-wrap: break-word;
+	overflow: hidden;
 }
-div.articleTT{
-	height:80px;
+div.storyTT{ /* story title div */
+	width:94%;
+	padding:3%;
+	height:51px;
+	
 	background-color: #455;
+	
+	font-size:16px;
 }
-div.articleFN{
+div.storyFN{ /* story button div */
+	padding:0%;
 	height:30px;
+	
 	background-color: #566;
 }
-div.articlePV{
+div.storyPV{ /* story preview div */
 	height:250px;
+	
 	background-color: #abb;
+	
 	overflow-y: hidden;
 }
 
-/* 
-	buttons for favourite, read later and remove from display
-*/
-div.articleBT{
-	width:33.33333333%;
-	padding-top: 7px;
-	padding-bottom: 5px;
-
+/* ==========================================================
+	BUTTON
+========================================================== */
+button.storyBT{ /* button wrapper div */
 	float:left;
-	background-color: #777
+	
+	width:33.33333333%;
+	height:100%;
+	padding:0px;
+	
+	border:0px;
+	background-color: #777;
+	
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration:none;
+	color:#eee;
 }
-div.articleBT1{
+button.storyBT1{ /* first button div */
 
 }
-div.articleBT2{
+button.storyBT2{ /* second button div */
 	background-color: #666
 }
-div.articleBT3{
+button.storyBT3{ /* third button div */
 
 }
 
+
+
+
+
+
+/* ===================================================================================
+	ID ///////////////////////////////////////////////////////////////////////////////
+	ID ///////////////////////////////////////////////////////////////////////////////
+	ID ///////////////////////////////////////////////////////////////////////////////
+=================================================================================== */ 
 
 /* 
-	links for favourite, read later and remove from display
-*/
-a.btLink{
-	width:100%;
-	font-size: 16px;
-	font-weight: 700;
-	color:#eee;
-	text-decoration:none;
-}
-a.articleBT.btRemove{
-
-}
-a.articleBT.btFavourite{
-
-}
-a.articleBT.btReadLater{
-
-}
-
-
-
-
-
-
-/* 
-	The main display div for all the articles.
+	The main display div for all the storys.
 */
 #mainDisplayDiv{
 	width:100%;
 	min-height: 100px;
-	background-color:#3D404F;
 	padding-top: 15px;
 	padding-bottom: 1px;
+	
+	background-color:#3D404F;
 }
