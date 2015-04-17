@@ -9,6 +9,9 @@ header {
 }
 
 body {
+	margin: 0;
+	padding: 0;
+	
 	background-color: #000;
 	
 	font-family: arial;
@@ -32,9 +35,8 @@ div.story{ /* story div for each story */
 	padding:0px;
 	margin-left:3%;
 	margin-right:3%;
-	margin-bottom: 5%;
+	margin-bottom: 8px;
 	
-	background-color: #899;
 	
 	text-align: left;
 	color:#eee;
@@ -45,27 +47,37 @@ div.storyContent{ /* main class for title, buttons and previews */
 	word-wrap: break-word;
 	overflow: hidden;
 }
-div.storyTT{ /* story title div */
-	width:94%;
-	padding:3%;
-	height:51px;
+div.storyTT{ /* story title wrapper div */
+	background-color: #F2D4C4;
 	
-	background-color: #455;
+	overflow: hidden;
+}
+div.storyTTText{ /* title content */
+	padding: 5px;
+	padding-bottom: 3px;
 	
 	font-size:16px;
+	font-weight:700;
+	cursor: pointer;
+	color: #3b3b3b;
 }
 div.storyFN{ /* story button div */
 	padding:0%;
-	height:30px;
+	height:26px;
 	
-	background-color: #566;
+	background-color: #E05C24;
 }
 div.storyPV{ /* story preview div */
-	height:250px;
+	height:200px;
+	display:none;
 	
-	background-color: #abb;
+	background-color: #FFF4F4;
 	
 	overflow-y: hidden;
+	cursor: pointer;
+	
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
 /* ==========================================================
@@ -113,8 +125,27 @@ button.storyBT3{ /* third button div */
 #mainDisplayDiv{
 	width:100%;
 	min-height: 100px;
-	padding-top: 15px;
+	padding-top: 45px;
 	padding-bottom: 1px;
 	
-	background-color:#3D404F;
+	
+	
+	background-color:#3B3735;
+}
+
+#buttonDiv{
+	display:none;
+}
+
+#toolbarDiv{
+	height: 14px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	
+	position: fixed;
+	
+	background-color:rgba(150,150,150,0.7);
+	color: white;
 }
