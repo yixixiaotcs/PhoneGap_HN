@@ -1,0 +1,148 @@
+
+/* ===================================================================================
+	TAG //////////////////////////////////////////////////////////////////////////////
+	TAG //////////////////////////////////////////////////////////////////////////////
+	TAG //////////////////////////////////////////////////////////////////////////////
+=================================================================================== */ 
+header {
+	
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	background-color:#E6E6E6;
+	
+	font-family: arial;
+}
+
+
+
+
+/* ===================================================================================
+	CLASS ////////////////////////////////////////////////////////////////////////////
+	CLASS ////////////////////////////////////////////////////////////////////////////
+	CLASS ////////////////////////////////////////////////////////////////////////////
+=================================================================================== */ 
+
+
+
+/* ==========================================================
+	ARTICLE div for each separate stories
+========================================================== */
+div.story{ /* story div for each story */
+	padding:0px;
+	margin-left:3%;
+	margin-right:3%;
+	margin-bottom: 8px;
+	
+    box-shadow: 0px 0px 2px #777777;
+	
+	text-align: left;
+}
+div.storyContent{ /* main class for title, buttons and previews */
+	width:100%;
+	
+	word-wrap: break-word;
+	overflow: hidden;
+}
+div.storyTT{ /* story title wrapper div */
+	background-color: #F9F9F9;
+}
+div.storyTTText{ /* title content */
+	padding: 5px;
+	padding-bottom: 3px;
+	
+	font-size:16px;
+	font-weight:700;
+	cursor: pointer;
+	color: #1B1B1B;
+}
+div.storyFN{ /* story button div */
+	padding:0%;
+	height:26px;
+	
+	background-color: RGBA(90,90,90,0.7);
+}
+div.storyPV{ /* story preview div */
+	height:200px;
+	display:none;
+	
+	background-color: #F9F9F9;
+	
+	overflow-y: hidden;
+	cursor: pointer;
+	
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+/* ==========================================================
+	BUTTON
+========================================================== */
+button.storyBT{ /* button wrapper div */
+	float:left;
+	
+	width:33.33333333%;
+	height:100%;
+	padding:0px;
+	
+	border:0px;
+	background-color: #777;
+	
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration:none;
+	color:#eee;
+}
+button.storyBT1{ /* first button div */
+
+}
+button.storyBT2{ /* second button div */
+	background-color: #666
+}
+button.storyBT3{ /* third button div */
+
+}
+
+
+
+
+
+
+/* ===================================================================================
+	ID ///////////////////////////////////////////////////////////////////////////////
+	ID ///////////////////////////////////////////////////////////////////////////////
+	ID ///////////////////////////////////////////////////////////////////////////////
+=================================================================================== */ 
+
+/* 
+	The main display div for all the storys.
+*/
+#mainDisplayDiv{
+	width:100%;
+	min-height: 100px;
+	padding-top: 45px;
+	padding-bottom: 1px;
+	
+	
+	
+}
+
+#buttonDiv{
+	display:none;
+}
+
+#toolbarDiv{
+	height: 14px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	
+	position: fixed;
+	
+	background-color:rgba(1,1,1,.6);
+	color: white;
+}

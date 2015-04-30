@@ -1,0 +1,44 @@
+	<html>
+	<!--  -->
+	<!--  -->
+
+	<head>
+		<title>Hacker News</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- JS for pressing button, swiping, and other user actions -->
+		<script type="text/javascript" src="./js/Action.js"></script>
+		<!-- JS for displaying storys, opening browsers and other visual related scripts -->
+		<script type="text/javascript" src="./js/Display.js"></script>
+		<!-- JS for reading and writing json file -->
+		<script type="text/javascript" src="./js/FileRW.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/HN_F.css">
+	</head>
+
+	<body onload="onload();">
+		<!-- buttons for testing purposes. Shall be replaced with phone actions later in dev. -->
+		<div id="buttonDiv">
+			<input type="text" id="searchStories" />
+			<button id="searchButton">Search</button>
+			<button id="sortByScore">Sort</button>
+			<button id="mostPopular">Most Popular</button>
+			<button id="newest">Newest</button>
+			<button id="all">Display All</button>
+			<button id="refresh">Refresh</button>
+			<br/>
+			<br/>
+		</div>
+
+		<div id="toolbarDiv">
+			<button id="showmore" onclick="showMore()">Show More</button>
+		</div>
+		
+		<center>
+			<!-- main div for displaying storys -->
+			<div id="mainDisplayDiv">
+
+
+			</div>
+		</center>
+	</body>
+
+	</html>
